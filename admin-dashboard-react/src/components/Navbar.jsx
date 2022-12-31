@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({openSidebar}) => {
   return (
-    <div>
-      <div className="border-2 border-black m-5 p-2 flex">
-        <div className='justify-center align-bottom'>
-            
-        </div>
+    <div className='flex'>
+      <button className='border border-black h-10 ' onClick={openSidebar}> Button</button>
+      <div className="border-black p-2 bg-blue-800 relative h-10 w-80">
+        Navbar
       </div>
+      
     </div>
   )
 }
