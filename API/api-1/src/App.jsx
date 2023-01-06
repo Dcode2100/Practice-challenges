@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1> heil hitler </h1> 
+      <Map/> 
     </div>
   )
 }

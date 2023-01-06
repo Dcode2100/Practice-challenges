@@ -1,10 +1,23 @@
+import React, { useState, useEffect } from 'react'
+import "./Style.css";
+import axios from 'axios';
+import Records from '../records.json';
 
-import React from 'react'
-import style from './components/style'
 const Map = () => {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    axios.get('/data.json')
+      .then(response => {
+        setData(response.data);
+      });
+  }, []);
   return (
-    <div>Map</div>
+    <div>
+     
+      {data ? <Records data={data} /> : 'Loading...'}
+    
+    </div>
   )
 }
-
 export default Map;
