@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Useeffect from './components/Useeffect/Useeffect';
-import Usestate from './components/Usestate/Usestate';
-import Usestatetwo from './components/Usestate/Usestatetwo';
+import Ue1 from './components/Useeffect/Ue1';
+import Us1 from './components/Usestate/Us1';
+import Test1 from './components/test/Test1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Useeffect/>
+   <Test1/> 
   </React.StrictMode>
 );
 

@@ -16,7 +16,7 @@ function adder(){
   return 2; 
 }
 
-function Usestate() {
+function Us1() {
 
   const [count,setCount] = useState(adder())
   const [theme,setTheme] = useState("theme")
@@ -36,4 +36,4 @@ function Usestate() {
   );
 }
 
-export default Usestate;
+export default Us1;

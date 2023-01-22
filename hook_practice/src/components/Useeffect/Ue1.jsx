@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 
-const Useeffect = () => {
+const Ue1 = () => {
   const[Count,setCount] = useState(2)
 
   
@@ -8,9 +8,6 @@ const Useeffect = () => {
       console.log({Count})
     }, [])
     
-  
- 
-  
   return (
   <div>
     <button onClick={()=>setCount(Count + 1)}>button</button>
@@ -20,4 +17,4 @@ const Useeffect = () => {
   )
 }
 
-export default Useeffect
+export default Ue1;

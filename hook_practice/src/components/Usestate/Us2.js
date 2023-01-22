@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-const Usestatetwo = () => {
+const Us2 = () => {
     const[inputValue,newChangeValue] = useState("dikshant");
     
     const onChange = (event) => {  // bydefault object is recieved that is event
@@ -14,4 +14,4 @@ const Usestatetwo = () => {
   </>)
 }
 
-export default Usestatetwo
+export default Us2
