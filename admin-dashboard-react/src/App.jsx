@@ -11,15 +11,17 @@ const App = () => {
   const toggleSidebar = () => {
     setSidebar((prevstate) => ! prevstate)
   }
-    return(
+    return (
       <div>
         <div className="Main-container flex">
-        <Sidebar  sidebar = {sidebar}/>
-        <Navbar openSidebar={toggleSidebar}/>
+          <Sidebar sidebar={sidebar} />
+          <div className="w-full">
+            <Navbar openSidebar={toggleSidebar} />
+            <Colors/>
+          </div>
         </div>
-        <Colors/>
       </div>
-  ) 
+    ); 
 }
 
 export default App
