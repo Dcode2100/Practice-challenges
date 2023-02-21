@@ -1,17 +1,20 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 
-const h1 = {
+const home = {
   color: "white",
-  textAlign: "center",
-  marginTop: "5rem",
+  height: "100vh",
+  background: "linear-gradient(45deg, #4d4293 30%, #42e555 90%)",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+
 };
+
+
 const Home = () => {
   return (
-    <div>
-      <Navbar />
-
-      <h1 style={h1}>Home</h1>
+    <div >
+      <h1 style={home}>Home</h1>
     </div>
   );
 };
