@@ -1,25 +1,17 @@
-import { useState } from "react"
 import React from 'react'
-import Navbar from "./components/Navbar"
-import Sidebar from "./components/Sidebar"
-import Colors from "./components/Colors"
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './Pages/Home';
+import Shop from './Pages/Shop';
 const App = () => {
 
-  const[sidebar, setSidebar] = useState(false);
-
-  const toggleSidebar = () => {
-    setSidebar((prevstate) => ! prevstate)
-  }
-    return (
+     return (
       <div>
-        <div className="Main-container flex">
-          <Sidebar sidebar={sidebar} />
-          <div className="w-full">
-            <Navbar openSidebar={toggleSidebar} />
-            <Colors/>
-          </div>
-        </div>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/shop" element={<Shop/>} />
+          </Routes>
+        </Router>
       </div>
     ); 
 }

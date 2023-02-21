@@ -1,18 +1,25 @@
 import React from 'react'
-import './Style.css';
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+const navitems = [
+  { name: "Home", path: "/" },
+  { name: "Shop", path: "/shop" },
+];
 
-const Navbar = ({openSidebar}) => {
+
+const Navbar = () => {
   return (
-    <div className=' app__navbar '>
-      <div className="app__navbar-container">
-      <button className='sidebar__button' onClick={openSidebar}> Button</button>
-          <div className="nav__links-container">
-            <button className='button__links'>Home</button>
-            <button className='button__links'>Contact us</button>
-          </div>
-      </div>
+    <div className="navbar">
+      <h1>Admin Dashboard</h1>
+      <ul>
+        {navitems.map((item, index) => (
+          <li  key={index}>
+            <Link to={item.path}>{item.name}</Link>
+          </li>
+        ))}
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
