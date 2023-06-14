@@ -1,0 +1,62 @@
+/* positioning using position - 
+    if we position anything absolute all the other part will ignore it and place them accordingly
+    absolute is used in inside relative parent
+    
+    relative is used for making the component and inside of that component relative to the html 
+    and if the element inside parent are said relative then they are adjustable only in the parent component
+    
+    fixed position is used when we want to make the element fix no matter if we scrol down
+
+    sticky position have the property of both relative and fixed 
+    it also require some top 1px to work
+    first it will be relative as soon as we scroll it becomes fixed;
+    */
+    
+.container{
+  background-color: rgb(54, 70, 70);
+  font-size: 20px;
+  flex-direction: row;
+}
+
+.icon{
+  color:aqua;
+}
+  
+.link_container{
+  
+  border: 2px solid white;
+  
+}
+ a{
+  
+  padding-top: 10px;
+  
+  border: 2px solid white;
+ }
+
+ .semi{
+    margin-top: 100px;
+    height: 200vh;
+    background-color: rgb(14, 208, 208);
+    border-radius: 15px 0px 0px 15px;
+    
+    display: flex;
+    
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    
+ }
+
+ .sem{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(27, 20, 228);
+    border-radius: 10%;
+    box-shadow: 10px 10px;
+    margin-right: 10px;
+    
+    
+ }

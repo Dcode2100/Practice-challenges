@@ -1,17 +1,22 @@
-import React from 'react'
-import App from './App'
+import React from "react";
 
-const Counter = (count:any) => {
-    
-    const increasecount: any = () => {
-        (count + 2)
-      }
+type CounterProps = {
+  count: number
+  word: string
+  isloggedin?: boolean
+  message: string
+
+};
+const Counter = (props: CounterProps) => {
+ 
   return (
-    <div>
-        <h1>Increase the counter by 2 in the counter app</h1>
-        <button onClick={increasecount}>Increase</button>
+    <div className=" w-full text-4xl text-center m-auto whitespace-nowrap h-[100vh]">
+      {props.isloggedin && <h1 className="text-blue-400 ">{props.message}</h1>}
+      <h2>{props.count}</h2>
+      <h2>{props.word}</h2>
     </div>
   )
-}
+};
 
-export default Counter
+
+export default Counter;

@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://i.pinimg.com/originals/a7/d6/c7/a7d6c70b625564a72dc0f4ad1d3d5df3.jpg")
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.clock{
+    display:flex;
+}
+
+.clock div{
+    margin:5px;
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    font-size: 15px;
+    
+}

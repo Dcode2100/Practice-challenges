@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the root font-size to 16px */
+      .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box{
+        height: 10rem;
+        width: 10rem;
+        background-color: rgb(120, 90, 203);
+        margin: 2rem;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        
+      }
+      .box:hover{
+        background-color: rgb(90, 203, 99);
+        border-bottom: 2px solid rgb(203, 90, 96);
+        transform: scale(1.2);
+        box-shadow: inset 0 -10px 0 0 cyan; 
+      }
+      .element{
+        width: 50rem;
+        text-align: center;
+        transform: translateX(-80%);
+        filter: blur(10px);
+        transition: all 0.5s ease;
+        
+      }
+      .element:hover{
+        transform: translateX(0);
+        filter: blur(0px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="element">
+      <h1>Modiji</h1>
+      </div>
+    </div>
+  </body>
+</html>
