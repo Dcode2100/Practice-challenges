@@ -1,13 +1,16 @@
 import React from 'react'
 import Navbar from './components/Navbar';
-import Home from '../src/Pages/Home';
-import Shop from "../src/Pages/Shop";
+import Home from './Pages/other/Home';
+import Shop from "./Pages/other/Shop";
+import Test from "./Pages/other/Test";
 
 const App = () => {
      return (
       <div>
-        <Navbar/>
-        <Home/>
+        {/* <Navbar/>
+        <Home/> */}
+        {/* <Test/> */}
+        
       </div>
     ); 
 }
