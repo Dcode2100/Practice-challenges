@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addTask() {
+            const input = document.getElementsByClassName("newtask")[0];
+            const taskText = input.value;
+
+            if (taskText.trim() !== '') {
+                const taskItem = document.createElement('div');
+                taskItem.textContent = taskText;
+                document.getElementsByClassName("app")[0].appendChild(taskItem);
+                input.value = '';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 class="heading">Todolist</h1>
+
+    <div class="app"></div>
+
+    <div class="addtask">
+        <input class="newtask" placeholder="Enter the task" />
+        <button onclick="addTask()">Add</button>
+    </div>
+</body>
+</html>
+

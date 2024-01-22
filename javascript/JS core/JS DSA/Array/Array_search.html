@@ -1,0 +1,37 @@
+<!-- 
+    Search element in the array
+    premade function for doing the task is 
+    console.log(arrayName.indexOf(number to search))
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function searchFunction(){
+            let data = [2,4,5,6,7,8,9,10];
+            let searchEl = document.getElementById("element").value;
+            searchEl = parseInt(searchEl);
+            let bool = -1;
+            for(let i=0; i<data.length-1; i++){
+                if(data[i] == searchEl){
+                    document.write(`The element is present on ${i} index`)
+                    bool = 1;
+                    break;
+                }
+                // document.write(data.indexOf(searchEl));  direct function for searching
+            }
+            if(bool == -1 ){
+                document.write("Element is not present in given data");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="element" placeholder="Enter element to be searched"/>
+    <button onclick="searchFunction()">Search</button>  
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+<!-- 
+    Array traversal, data manipulation
+     and how to get data from button extraction of it 
+    and also the using condition to execute them.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <script>
+        let data =[9,4,5,3,32,2,2,8,9,55,66];
+        // for(let i = 0; i < data.length-1; i++){
+        //     document.write(`array  ${i} is ${data[i]} <br>`);
+        // }
+
+        // let x = 2;
+        // document.write(data[x]);
+
+        function getElement()
+        {
+            let el = document.getElementById('element').value
+
+            if(el<data.length && parseInt(el)) {alert(data[el])}
+
+            else if(el === 0){ alert(data[0])}
+            else if(Math.sign(el) == -1) { alert('the input cannot be negative')}
+            else { alert("Please Enter valid number") }
+            
+            
+        }
+
+
+    </script>
+</head>
+<body>
+    
+    <button onclick="getElement()"> get Element</button>
+    <input type="text" id="element"/>
+    
+    
+</body>
+</html>
+

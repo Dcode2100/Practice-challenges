@@ -1,0 +1,34 @@
+<!--function to buy apple and if money left then tell us-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let money = 100;
+        let totalApple = 0;
+
+        function buyApple(x){
+            if(x >= 0){
+                console.warn(' i have ', x,' rupees and ', totalApple, ' apple' );
+                buyMore(x);
+            } else{
+                document.write("no money left",totalApple);
+            }
+           
+        }
+        function buyMore(x){
+            totalApple++;
+            buyApple(x-10);
+           // document.write("buymore",x);
+        }
+        buyApple(money);
+    </script>
+</body>
+</html>

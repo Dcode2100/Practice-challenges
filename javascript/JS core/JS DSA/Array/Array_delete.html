@@ -1,0 +1,45 @@
+
+<!-- 
+    Looping throught the array from index to length and shifting to the 
+    deleted position to delete the element and to reduce the array by 1 
+    to deal with the last 2 similar elements.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        // function deleteindex(){
+        //     for (i = index; i < data.length-1; i++) {
+        //     data[i] = data[i+1];
+        //     }
+        //     data.length=data.length-1;
+        //     document.write(data," ");
+        // }
+
+        function deleteindex(){
+            let data = [10,20,30,40,50,60,70,80,90];
+        let index = document.getElementById('index').value;
+        index = parseInt(index);
+        let i;
+            
+            for (i = index; i < data.length-1; i++) {
+                   data[i] = data[i+1];
+            }
+            data.length=data.length-1;
+            document.write(data," ");
+        }
+    </script>
+</head>
+<body> 
+    <input type="text" id="index" placeholder="enter the index to be deleted"/>
+    <button onclick="deleteindex()">Delete</button>
+
+    
+</body>
+</html>
