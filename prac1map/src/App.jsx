@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './Pages/other/Home';
 import Shop from "./Pages/other/Shop";
 import Test from "./Pages/other/Test";
+import HeroFeature from './evakey_feature/HeroFeature';
 
 const App = () => {
      return (
@@ -10,7 +11,8 @@ const App = () => {
         {/* <Navbar/>
         <Home/> */}
         {/* <Test/> */}
-        
+        <HeroFeature/>
+        herofeature
       </div>
     ); 
 }
