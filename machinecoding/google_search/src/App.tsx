@@ -50,9 +50,7 @@ const data =
         setLoading(true);
         try {
           if (searchInput.length > 2) {
-            const filteredData: string[] = data
-              .filter((item) => item.toLowerCase().includes(searchInput.toLowerCase()))
-             
+            const filteredData: string[] = data.filter((item) => item.toLowerCase().includes(searchInput.toLowerCase()))
             setSuggestion(filteredData);
             console.log(filteredData);
           }
@@ -77,12 +75,6 @@ const data =
     function typeAhead(e: React.ChangeEvent<HTMLInputElement>) {
       setSearchInput(e.target.value);
     }
-  
-    // Highlight the matching part of the search results
-    const highlightSearchTerm = (item: string, searchTerm: string) => {
-      const regex = new RegExp(`(${searchTerm})`, "gi");
-      return item.replace(regex, "<span class='highlight'>$1</span>");
-    };
   
     return (
       <div className='flex flex-col gap-5'>
