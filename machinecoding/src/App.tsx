@@ -4,7 +4,7 @@ import Home from './pages/Home'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 w-full">
+    <div className="min-h-screen bg-gray-50 text-gray-900 w-[100vw]">
       <header className="border-b bg-white">
         <nav className="  flex items-center justify-between p-4">
           <Link to="/" className="text-xl font-semibold">Machinecoding</Link>
